@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maza Restaurant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("pexels-goumbik-349610.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .welcome-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      padding: 20px;
+    }
+
+    .welcome {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    section {
+      padding: 50px 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 30px auto;
+      border-radius: 15px;
+      max-width: 800px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    input, textarea, select {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+      text-align: left;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: brown;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Maza Restaurant</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#add-recipe">Add Recipe</a>
+      <a href="#recipe-list">Recipe List</a>
+    </nav>
+  </header>
+
+  <section class="welcome-section" id="home">
+    <div class="welcome">
+      <h2><i>Welcome to Maza Restaurant!</i></h2>
+      <p><i>Here, flavors speak, scents bring back memories, and every recipe tells a story from the heart.</i></p>
+      <p><i>This book is for you — for the times you want to cook with love, enjoy every bite, and share warm meals with a smile.</i></p>
+      <p><i>Welcome to a world of flavors you’ll never forget.</i></p>
+      <img src="pexels-robinstickel-70497.jpg" alt="Delicious Welcome Dish" />
+      <br><br>
+      <button>Start Now</button>
+    </div>
+  </section>
+
+  <section id="add-recipe">
+    <h2>Add Your Own Recipe</h2>
+    <form>
+      <input type="text" placeholder="Recipe Name" required /><br>
+      <textarea rows="4" placeholder="Ingredients" required></textarea><br>
+      <textarea rows="5" placeholder="Instructions" required></textarea><br>
+      <input type="text" placeholder="**your-dish-image.jpg**" required /><br>
+      <select required>
+        <option value="">Select Category</option>
+        <option>Desserts</option>
+        <option>Appetizers</option>
+        <option>Vegan</option>
+        <option>Main Course</option>
+      </select><br>
+      <button type="submit">Add Recipe</button>
+    </form>
+  </section>
+
+  <section id="recipe-list">
+    <h2>Our Favorite Recipes</h2>
+    <h3>Spaghetti Carbonara</h3>
+    <img src="delicious-pasta-plate.jpg" alt="Spaghetti Carbonara" />
+    <p>Creamy and comforting pasta that’s quick to make and impossible to forget.</p>
+
+    <h3>Chocolate Cake</h3>
+    <img src="food-chocolate-brown-bakery-background.jpg" alt="Chocolate Cake" />
+    <p>Moist, rich, and perfect for dessert lovers everywhere.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Maza Restaurant | All Rights Reserved
+  </footer>
+
+</body>
+</html>
